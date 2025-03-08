@@ -8,6 +8,11 @@ function clearContent(){
     content.innerHTML = '';
 }
 
+document.querySelector('#nav-logo').addEventListener('click', () => {
+    clearContent();
+    loadHome();
+});
+
 document.querySelector("#home-btn").addEventListener('click', () => {
     clearContent();
     loadHome();
@@ -22,6 +27,7 @@ document.querySelector("#contact-btn").addEventListener('click', () => {
     clearContent();
     loadContact();
 });
+
 
 clearContent();
 loadHome();

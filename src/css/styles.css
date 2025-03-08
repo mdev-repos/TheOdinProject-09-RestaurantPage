@@ -28,6 +28,9 @@ header{
     position: sticky;
     top: 0;
     box-shadow: 2px 1px 2px rgba(128, 128, 128, 0.507);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav{
@@ -44,6 +47,12 @@ nav{
     width: auto;
     height: 55px;
     max-width: 50%;
+}
+
+#nav-logo:hover{
+    cursor: pointer;
+    height: 60px;
+    max-width: 55%;
 }
 
 #nav-logo img{
@@ -81,6 +90,24 @@ nav{
 /* CONTENT STYLES*/
 #content{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER STYLES*/
+footer{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--first-color);
+}
+
+.sign{
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 /* HOME STYLES*/
@@ -185,7 +212,7 @@ nav{
     padding: 10px;
 }
 
-.references{
+.home-references{
     width: 100%;
     height: 300px;
     padding: 5px;
@@ -199,21 +226,100 @@ nav{
     font-size: 0.75rem;
 }
 
-footer{
-    height: 40px;
+/* MENU STYLES*/
+.menu-container{
+    width: 100%;
+    padding: 20px 12px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--first-color);
-    text-align: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.sign{
+.presentation{
+    width: 80%;
     font-size: 0.9rem;
+}
+.presentation-title{
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.section-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.card-item{
+    width: 43%;
+    max-width: 180px;
+    height: 180px;
+    max-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.item-img{
+    width: 100%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: var(--secon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-img img{
+    object-fit: cover;
+    max-width: 90%;
+    max-height: 75%;
+}
+
+.item-title{
+    font-weight: 600;
+}
+
+.menu-references{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 /* RESPONSIVE DESIGN */
 @media (min-width: 768px) {
+    /* GENERAL STYLES */
+    nav{
+        width: 90%;
+    }
+    
+    footer{
+        height: 70px;
+    }
+
+    .sign{
+        font-size: 1.4rem;
+    }
+
+    /* HOME STYLES */
     .card{
         width: 100%;
         height: 400px;
@@ -247,15 +353,54 @@ footer{
         gap: 7px;
     }
 
-    .references{
+    .home-references{
         font-size: 1.1rem;
     }
 
-    .sign{
-        font-size: 1.4rem;
+    /* MENU STYLES */
+    .menu-container{
+        width: 90%;
+        justify-content: center;
+        align-items: start;
     }
 
-    footer{
-        height: 70px;
+    .presentation{
+        margin: 15px 0 25px 0;
+    }
+    
+    .presentation, .section-title, .item-title{
+        font-size: 1.3rem;
+    }
+
+    .presentation-title{
+        font-size: 1.7rem;
+        width: 50%;
+    }
+
+    .menu-card-container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-title{
+        font-weight: 600;
+        padding: 12px 0;
+    }
+
+    .card-container{
+        padding: 25px 50px;
+        justify-content: space-between;
+    }
+
+    .card-item{
+        padding: 30px;
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .menu-references{
+        font-size: 1.1rem;
+        gap: 10px;
     }
 }

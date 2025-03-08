@@ -146,7 +146,7 @@ export default function loadHome(){
 
     //--- REFERENCES CARD ---//
     const referencesContainer = document.createElement('div');
-    referencesContainer.classList.add('references')
+    referencesContainer.classList.add('home-references')
 
     const referencesTitle = document.createElement('h2');
     referencesTitle.textContent = 'A special thanks to...';
