@@ -43,3 +43,6 @@ document.querySelector("#contact-btn").addEventListener('click', () => {
     });
     loadAbout();
 });
+
+clearContent();
+loadHome();
