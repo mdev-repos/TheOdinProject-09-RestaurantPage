@@ -110,7 +110,7 @@ footer{
     text-align: center;
 }
 
-/* HOME STYLES*/
+/* HOME-PAGE STYLES*/
 .home-container{
     width: 100%;
 }
@@ -223,10 +223,10 @@ footer{
     justify-content: center;
     gap: 12px;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 
-/* MENU STYLES*/
+/* MENU-PAGE STYLES*/
 .menu-container{
     width: 100%;
     padding: 20px 12px;
@@ -239,6 +239,7 @@ footer{
     width: 80%;
     font-size: 0.9rem;
 }
+
 .presentation-title{
     width: 100%;
     font-size: 1.1rem;
@@ -302,6 +303,52 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    font-size: 0.9rem;
+}
+
+
+/* ABOUT-PAGE STYLES */
+.about-container{
+    width: 100%;
+    color: var(--first-color);
+}
+
+.about-card{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.about-card-img{
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.about-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-card-text{
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.card-text-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 10px 0;
 }
 
 /* RESPONSIVE DESIGN */
@@ -319,7 +366,7 @@ footer{
         font-size: 1.4rem;
     }
 
-    /* HOME STYLES */
+    /* HOME-PAGE STYLES */
     .card{
         width: 100%;
         height: 400px;
@@ -357,7 +404,7 @@ footer{
         font-size: 1.1rem;
     }
 
-    /* MENU STYLES */
+    /* MENU-PAGE STYLES */
     .menu-container{
         width: 90%;
         justify-content: center;
@@ -402,5 +449,31 @@ footer{
     .menu-references{
         font-size: 1.1rem;
         gap: 10px;
+    }
+
+    
+    /* ABOUT-PAGE STYLES */    
+    .about-card{
+        height: 400px;
+        flex-direction: row-reverse;
+        box-shadow: 3px 1px 3px grey;
+    }
+    
+    .about-card-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .about-card-text{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+    
+    .card-text-title{
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin: 10px 0;
     }
 }

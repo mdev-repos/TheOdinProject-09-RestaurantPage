@@ -6,6 +6,11 @@ import bakeryImg from '../assets/Bakery-img.png';
 import sandwichImg from '../assets/Sandwich-img.png';
 import snackImg from '../assets/Snack-img.png';
 
+import aboutClockImg from '../assets/about-clock-img.jpg'
+import aboutFriendsImg from '../assets/about-friends-img.jpg'
+import deliveryImg from '../assets/about-delivery-img.jpg'
+import compromiseImg from '../assets/about-compromise-img.jpg'
+
 export const drinksData = [
   {
     itemImg: hotCoffeeImg,
@@ -104,4 +109,78 @@ export const referencesData = [
         secondLinkRef: 'https://unsplash.com/es/fotos/vaso-transparente-junto-al-pan-moreno-en-un-plato-de-ceramica-azul-GiTJpq74ER0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
         secondLinkText: 'Unsplash'
     }
+];
+
+export const aboutCards = [
+  {
+    cardImg: aboutClockImg,
+    cardAlt: 'Clock image',
+    cardTitle: 'Hours',
+    cardEntrances: [
+      'Monday to Friday | 6 AM - 9 PM',
+      'Saturday | 8 AM - 5 PM',
+      'Sunday | CLOSED'
+    ]
+  },
+  {
+    cardImg: aboutFriendsImg,
+    cardAlt: 'Friends taking coffee',
+    cardTitle: 'In Store',
+    cardEntrances: [
+      'Our trained baristas await you in our stores to offer you a very special drink.',
+      'The warm atmosphere and the details of our handcrafted products make the experience unique and unmatched.'
+    ]
+  },
+  {
+    cardImg: deliveryImg,
+    cardAlt: 'A programer taking coffee at home',
+    cardTitle: 'Delivery',
+    cardEntrances: [
+      'Customers can order their favorite drinks and products wherever they are with third-party logistics operators.'
+    ]
+  },
+  {
+    cardImg: compromiseImg,
+    cardAlt: 'Coffee beans image',
+    cardTitle: 'Our Compromise',
+    cardEntrances: [
+      'Inspiring and nurturing the human spirit: One person, one cup, and one community at a time.',
+      'These are the principles that guide us in fulfilling our mission every day'
+    ]
+  } 
+]
+
+export const aboutReferences = [
+  {
+    firstText: 'Clock photo by ',
+    firstLinkRef: 'https://unsplash.com/es/@malvestida?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
+    firstLinkText: 'Malvestida',
+    secondText: ' on ',
+    secondLinkRef: 'https://unsplash.com/es/fotos/persona-sosteniendo-reloj-despertador-analogico-de-doble-campana-rojo-y-beige-FfbVFLAVscw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
+    secondLinkText: 'Unsplash'  
+  },
+  {
+    firstText: 'Coffee friends photo by ',
+    firstLinkRef: 'https://unsplash.com/es/@jbhalla28?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
+    firstLinkText: 'justin bhalla',
+    secondText: ' on ',
+    secondLinkRef: 'https://unsplash.com/es/fotos/persona-sosteniendo-capuchino-en-taza-de-ceramica-negra-uoMj5Or_9CE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
+    secondLinkText: 'Unsplash'   
+  },
+  {
+    firstText: 'Coffee at home photo by',
+    firstLinkRef: 'https://unsplash.com/es/@_ferh97?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
+    firstLinkText: 'Fernando Hernandez',
+    secondText: ' on ',
+    secondLinkRef: 'https://unsplash.com/es/fotos/frasco-de-vidrio-lleno-efzwcMRM6j4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
+    secondLinkText: 'Unsplash'
+  },
+  {
+    firstText: 'Coffee beans photo by ',
+    firstLinkRef: 'https://unsplash.com/es/@miloezger?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
+    firstLinkText: 'Milo Miloezger',
+    secondText: ' on ',
+    secondLinkRef: 'https://unsplash.com/es/fotos/granos-de-cafe-en-wok-de-acero-gris-rKYRJu0n06Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
+    secondLinkText: 'Unsplash'      
+  }
 ];
